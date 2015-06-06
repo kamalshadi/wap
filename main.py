@@ -336,4 +336,4 @@ def server_static():
     return static_file('results.csv', root='.')
 
 
-run(host='localhost', port=8080, debug=True)
+run(host='localhost', debug=True)
