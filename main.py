@@ -5,8 +5,10 @@ import json
 from random import random, sample
 from time import time
 from sys import argv
+from dataSchemaGenerator import reset
 
 
+reset()
 TEMPLATE_PATH[:] = ["./templates"]
 user_id = '0'
 user_age = '0'

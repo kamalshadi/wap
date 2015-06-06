@@ -3,15 +3,13 @@ import os
 import json
 
 
-# Global variables
-with open('root.json') as f:
-    info = json.load(f)
-dbn = info['dbn']
-dbt1 = info['dbt1']
-
-
 # Delete all previous tables and datasets
 def reset():
+    # Global variables
+    with open('root.json') as f:
+        info = json.load(f)
+    dbn = info['dbn']
+    dbt1 = info['dbt1']
     if os.path.isfile(dbn+'.db'):
         os.remove(dbn+'.db')
     db = sq.connect(dbn+'.db')
@@ -27,5 +25,3 @@ def reset():
     info['n_users'] = 0
     with open('root.json','w') as f:
         json.dump(info, f)
-
-reset()
