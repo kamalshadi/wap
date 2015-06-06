@@ -172,7 +172,7 @@ def pic_show(id):
             row[4] = 'triangle'
         else:
             ls = [T, L]
-            row[3] = 'trianle'
+            row[3] = 'triangle'
             row[4] = 'line'
     elif tup == (False, True, True, False):
         if(ci > si):
