@@ -1,2 +1,2 @@
-initial: python dataSchemaGenerator.py
-web: python main.py
+initial: python ./dataSchemaGenerator.py
+web: python ./main.py $PORT

@@ -4,6 +4,7 @@ import sqlite3 as sq
 import json
 from random import random, sample
 from time import time
+from sys import argv
 
 
 TEMPLATE_PATH[:] = ["./templates"]
@@ -336,4 +337,4 @@ def server_static():
     return static_file('results.csv', root='.')
 
 
-run(host='localhost', debug=True)
+run(host='0.0.0.0', port=argv[1])
