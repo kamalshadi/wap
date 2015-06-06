@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Results </title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="text-center">
+	<a href ="/results.csv"><button class="but-success" type="button"><h1><b>Download data<b></h1></button></a>
+	</div>
+	<div class="container">
+<table class="table table-bordered">
+{% for row in rows %}
+<tr>
+	{% for element in row %}
+	<td>{{element}}</td>
+	{% endfor %}
+</tr>
+{% endfor %}
+</table>
+	</div>
+</body>
+</html>

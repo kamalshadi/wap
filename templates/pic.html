@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Picture modality </title>
+		<style>
+		.centered{
+		margin:0 auto,
+		width:100%,
+			margin-left:100px
+		}
+		.center{
+			margin:10px 25% 10px 25%;
+		}
+		.butin{
+			background-color:#8FBC8F;
+			padding:2%;
+			margin:1px 10px 1px 10px;
+		}
+		</style>
+	</head>
+	<body>
+
+<div class="center">
+{{shape1}}
+</div>
+<div class="center">
+{{shape2}}
+</div>
+<div class='center'>
+<form action="/wap/rowy/{{id}}" method="post" style="display:inline">
+  <button class="butin" name="subject" type="submit" value=1><h3> &nbsp; &nbsp; Yes &nbsp; &nbsp;</h3></button>
+</form>
+<form action="/wap/rown/{{id}}" method="post" style="display:inline">
+  <button class="butin" name="subject" type="submit" value=0><h3>&nbsp; &nbsp;No &nbsp; &nbsp; &nbsp;</h3></button>
+</form>
+</div>
+	</body>
+</html>

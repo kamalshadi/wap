@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="row">
+	<p class="lead text-justify" style="background-color:#BDB76B;margin:10% 25% 2% 10%;padding:2%">
+	This is an expriemt for a project in <b>"Introduction to cognitive science"</b> course at Georgia Institute of Technolgy (summer 2015). <br/>
+	The expriment would take less than 5 minutes.<br/>
+	We appreciate your time.
+	</p>
+</div>
+  <form role="form" action='/wap' method='post'>
+	<div class="row" style="margin:2% 25% 2% 10%;padding:2%">
+		<div class="col-md-3">
+			<p><h3>Gender:</h3></p>
+   			 <div class="radio" style="margin-left:5px">
+      				<label><input type="radio" name="sex" value=1 >Male</label>
+    			</div>
+    			<div class="radio" style="margin-left:5px">	
+      				<label><input type="radio" name="sex" value=0 >Female</label>
+			</div>
+	  	</div>
+	  	<div class="col-md-9">
+			<h3>age:</h3><input type="number" name="age" required>
+	 	</div>
+	</div>
+	<div class="row" style="margin:1% 25% 2% 10%;padding:2%">
+	<input type="checkbox" name="feedback" value="feed" style="margin:1% 2px 2% 10%;padding:2%"/><b>Check for feedback after each question<b><br/>
+<input class="btn-success" value="Submit and start" type="submit" style="margin:1% 25% 2% 10%;padding:2%"/>
+</div>
+  </form>
+{% endblock %}
